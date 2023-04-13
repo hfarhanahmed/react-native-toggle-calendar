@@ -20,9 +20,6 @@ import SingleDay from './day/custom';
 import CalendarHeader from './header';
 import shouldComponentUpdate from './updater';
 
-//Fallback when RN version is < 0.44
-const viewPropTypes = View.propTypes;
-
 const EmptyArray = [];
 
 // horizontal calendar will be scrolled to (offset * viewport width) to keep selected date visible
@@ -44,7 +41,7 @@ class Calendar extends Component {
     markedDates: PropTypes.object,
 
     // Specify style for calendar container element. Default = {}
-    style: viewPropTypes.style,
+    style: PropTypes.object,
     // Initially visible month. Default = Date()
     current: PropTypes.any,
     // Minimum date that can be selected, dates before minDate will be grayed out. Default = undefined
