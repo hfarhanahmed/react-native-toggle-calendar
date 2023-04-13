@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {
   View,
-  ViewPropTypes,
   ScrollView,
   Dimensions,
   ActivityIndicator,
@@ -22,7 +21,7 @@ import CalendarHeader from './header';
 import shouldComponentUpdate from './updater';
 
 //Fallback when RN version is < 0.44
-const viewPropTypes = ViewPropTypes || View.propTypes;
+const viewPropTypes = View.propTypes;
 
 const EmptyArray = [];
 
