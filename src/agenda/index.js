@@ -4,7 +4,6 @@ import {
   View,
   Dimensions,
   Animated,
-  ViewPropTypes,
 } from 'react-native';
 import PropTypes from 'prop-types';
 import XDate from 'xdate';
@@ -20,7 +19,7 @@ const HEADER_HEIGHT = 104;
 const KNOB_HEIGHT = 24;
 
 //Fallback when RN version is < 0.44
-const viewPropTypes = ViewPropTypes || View.propTypes;
+const viewPropTypes = View.propTypes;
 
 export default class AgendaView extends Component {
   static propTypes = {
